@@ -1,11 +1,805 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hocky</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+    integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .font-size {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .container {
+      max-width: 1170px;
+      width: 98%;
+    }
+
+
+
+
+    #slide1 {
+      width: 100%;
+      height: 550px;
+      background: url("Images/1.png"), lightgray 0px 0px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 18px;
+    }
+
+
+
+    #slide2 {
+      width: 100%;
+      height: 550px;
+      background: url("Images/2.png"), lightgray 0px 0px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 18px;
+    }
+
+
+
+    #slide3 {
+      width: 100%;
+      height: 550px;
+      background: url("Images/3.png"), lightgray 0px 0px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 18px;
+    }
+
+
+
+    #slide4 {
+      width: 100%;
+      height: 550px;
+      background: url("Images/4.png"), lightgray 0px 0px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 18px;
+    }
+
+
+    .jun-1 {
+
+      height: 380px;
+
+      border-radius: 18px;
+      background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url("Images/2.png"), rgba(19, 19, 24, 0.50);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+
+    .Teen-2 {
+
+      height: 385px;
+      border-radius: 18px;
+      background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url("Images/3.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+
+    .Professional-P {
+      height: 400px;
+      width: 1050px;
+
+      margin: auto;
+      border-radius: 18px;
+
+      background: rgba(19, 19, 24, 0.50);
+      background-image: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url("Images/4.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+  </style>
 </head>
-<body>
-  
+
+<body class="font-size">
+  <header>
+    <div class="container m-auto">
+      <nav class="py-8">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] px-11 shadow  rounded-box w-52">
+
+                <li><a class="text-base text-[#424247] hover:text-[#FF4240]">Home</a></li>
+                <li><a class="text-base text-[#424247] hover:text-[#FF4240]">About</a></li>
+                <li><a class="text-base text-[#424247] hover:text-[#FF4240]">Pages</a></li>
+                <li><a class="text-base text-[#424247] hover:text-[#FF4240]">Blog</a></li>
+                <li><a class="text-base text-[#424247] hover:text-[#FF4240]">Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-3xl font-bold">Hockey <span class="text-red-600">’</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-11">
+              <li><a class="text-base text-[#424247] hover:text-[#FF4240] ">Home</a></li>
+              <li><a class="text-base text-[#424247]  hover:text-[#FF4240]">About</a></li>
+              <li><a class="text-base text-[#424247] hover:text-[#FF4240]">Pages</a></li>
+              <li><a class="text-base text-[#424247] hover:text-[#FF4240]">Blog</a></li>
+              <li><a class="text-base text-[#424247] hover:text-[#FF4240]">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 hidden">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+            <a class="btn px-6 text-[#FFF] hover:text-[#FF4240] bg-[#FF4240] ml-8">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="carousel-start">
+      <div class="container mx-auto">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="  absolute bottom-8 right-8 p-8 rounded-lg bg-[#131318] ">
+              <h5 class="text-3xl text-[#FFF]">Meet All The Heroes From The Field</h5>
+              <h3 class="w-[512px] pt-4  text-base   text-[#FFF] text-left">Our junior hockey programmes are currently
+                full on - please see the Junior Section page for more information and get involved . </h3>
+            </div>
+
+
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="  absolute bottom-8 right-8 p-8 rounded-lg bg-[#131318] ">
+              <h5 class="text-3xl text-[#FFF]">Meet All the Heroes From the Field</h5>
+              <h3 class="w-[512px] pt-4  text-base   text-[#FFF] text-left">Our junior hockey programmes are currently
+                full on - please see the Junior Section page for more information and get involved . </h3>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="  absolute bottom-8 right-8 p-8 rounded-lg bg-[#131318] ">
+              <h5 class="text-3xl text-[#FFF]">Meet All the Heroes From the Field</h5>
+              <h3 class="w-[512px] pt-4  text-base   text-[#FFF] text-left">Our junior hockey programmes are currently
+                full on - please see the Junior Section page for more information and get involved . </h3>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="  absolute bottom-8 right-8 p-8 rounded-lg bg-[#131318] ">
+              <h5 class="text-3xl text-[#FFF]">Meet All the Heroes From the Field</h5>
+              <h3 class="w-[512px] pt-4  text-base   text-[#FFF] text-left">Our junior hockey programmes are currently
+                full on - please see the Junior Section page for more information and get involved . </h3>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="program-section py-14">
+      <div class="container mx-auto pb-8">
+        <div class="section-title-part py-8">
+          <h1 class="text-center text-[ #131318] font-extrabold text-5xl">Professional Hockey's Club</h1>
+          <h2 class="w-[550px] text-[#13131899] mx-auto text-center text-base py-8">Please navigate the site for updates
+            and general information or for more information . </h2>
+        </div>
+
+
+        <div class="flex lg:flex-row  pt-7 flex-col items-center  justify-between ">
+
+          <div class="block justify-center items-center mx-auto">
+            <div
+              class="radial-progress relative top-2 right-[-38%] items-center justify-center text-[#4060ff]  w-[110px] h-[110px]"
+              style="--value:83;" role="progressbar">83%</div>
+            <h3 class="text-lg text-center pt-4 text-[#131318] font-bold">Prayer Facility</h3>
+            <p class="text-base text-center pt-4 text-[#13131899]">When Muslims are travelling there are special rulings
+              that should be considered. .</p>
+          </div>
+          <div>
+            <div class="radial-progress relative top-2 left-[32%]  text-[#d24949]   w-[110px] h-[110px]"
+              style="--value:75;" role="progressbar">75%</div>
+            <h3 class="text-lg text-center pt-4 text-[#131318] font-bold">Experienced Coach</h3>
+            <p class="text-base text-center pt-4 text-[#13131899]">No, it's the fault of an experienced coach.</p>
+          </div>
+          <div>
+            <div class="radial-progress relative top-2 left-[32%]  text-[#8aff46]  w-[110px] h-[110px]"
+              style="--value:80;" role="progressbar">80%</div>
+            <h3 class="text-lg text-center pt-4 text-[#131318] font-bold">Senior Player</h3>
+            <p class="text-base text-center pt-4 text-[#13131899]">players who have attained the age of 18 years</p>
+
+          </div>
+          <div>
+            <div class="radial-progress  relative top-2 right-[-38%]  text-[#f1d34c78]  w-[110px] h-[110px]"
+              style="--value:70;" role="progressbar">70%</div>
+            <h3 class="text-lg text-center pt-4 text-[#131318] font-bold">Training Ground</h3>
+            <p class="text-base text-center pt-4 text-[#13131899]">A training ground is an area where professional
+              association football teams prepare for matches.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="program-part2 ">
+      <div class="container ">
+        <div class="section-title-part py-2 ">
+          <h1 class="text-center text-[ #131318] font-extrabold text-5xl">Program Sections</h1>
+          <p class="w-[550px] text-[#13131899] mx-auto text-center text-base py-14">TEDDINGTON hc receives donations
+            from CHARLES WADE FINANCE WHEN MEMBERS USE ANY Of THEIR SERVICES WHICH INCLUDE: </p>
+        </div>
+
+      </div>
+      <div class="container m-auto">
+        <div class="program-part w-full py-9 grid sm:grid-flow-col grid-row items-center gap-14 justify-center mx-auto">
+          <div class="jun-1  pt-25 pl-8 w-[573px] h-[338px] ">
+            <h1 class="text-4xl text-left pt-4 text-[#FFF] font-bold">Junior Program </h1>
+            <h2 class="text-base w-[495px]  text-left pt-4 text-[#FFF]">The Junior Professional Associate (JPA) program
+              is a unique opportunity to gain entry-level professional experience.</h2>
+            <a href="" class="px-6 relative top-8 mt-6 py-4 rounded-lg text-[#FFF]  bg-[#FF4240] hover:text-[#FF4240]">
+              Register Now!</a>
+
+          </div>
+          <div class="Teen-2  pt-25 pl-8 w-[573px] h-[308px] ">
+            <h1 class="text-3xl text-left pt-4 text-[#FFF] font-bold">Teenager Program</h1>
+            <h2 class="text-base w-[500px]  text-left pt-4 text-[#FFF]">It's a unique experience for the local teens and
+              the group from Haarlem to have a week long encounter together of Bible study</h2>
+            <a href="" class="px-6 relative top-8 mt-6 py-4 rounded-lg text-[#FFF]  bg-[#FF4240] hover:text-[#FF4240]">
+              Register Now!</a>
+
+          </div>
+        </div>
+        <div class="relative Professional-P mb-8">
+
+          <div class="absolute left-10 bottom-20">
+            <h1 class="text-3xl text-left pt-4 text-[#FFF] font-bold">Professional Program</h1>
+            <h2 class="text-base w-[495px]  text-left pt-4 text-[#FFF]">The Young Professionals Program (YPP) is an
+              entry-level recruitment program aimed at attracting highly qualified and motivated individuals to ADB.
+            </h2>
+            <a href="" class="px-6 relative top-10  py-4 rounded-lg text-[#FFF]  bg-[#FF4240] hover:text-[#FF4240]">
+              Register Now!</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="product-start">
+      <div class="container m-auto">
+        <div class="section-title-part py-8">
+          <h1 class="text-center text-[ #131318] font-extrabold text-4xl">Our New Products</h1>
+          <h2 class="w-[550px] text-[#13131899] mx-auto text-center text-base py-6">After spending months on developing
+            a product or service, the obvious thing is to launch it out into the world; and email marketing is a good
+            channel to spread the word about your new product </h2>
+        </div>
+
+        <div class="w-auto mx-auto grid gap-7 lg:grid-cols-2">
+          <div class="flex items-center gap-7 justify-center">
+            <div>
+              <img class="" src="Images/6.png" alt="">
+            </div>
+            <div>
+              <div class="flex items-center justify-start">
+                <div class="rating">
+                  <img src="Images/Frame (4).png" alt=""><span>4.0</span>
+                </div>
+                <div class="rating  items-center justify-center">
+                  <img class="pl-4" src="Images/Frame (2).png" alt=""><span>30</span>
+
+                </div>
+                <div class="rating ">
+
+                  <img class="pl-2" src="Images/Frame (3).png" alt=""><span class="text-base ">180</span>
+
+                </div>
+              </div>
+              <h5 class="font-extrabold text-xl text-[#131318] pt-2">World Cup Flags Football</h5>
+              <h6 class="text-base font-medium pt-3 w-[306px]">Plan your product launch properly with the help of our
+                email marketing templates. </h6>
+              <div class="flex items-center justify-start pt-3">
+                <span class="text-base font-medium">Price - $120.00</span>
+
+                <span class="text-base text-[#18131380] font-medium pl-3"><i class="My-shopping"></i></i> Delivery Fee :
+                  Free</span>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex items-center gap-7 justify-center">
+            <div>
+              <img class="" src="Images/7.png" alt="">
+            </div>
+            <div>
+              <div class="flex items-center justify-start">
+                <div class="rating">
+                  <img src="Images/Frame (4).png" alt=""><span>4.0</span>
+                </div>
+                <div class="rating  items-center justify-center">
+                  <img class="pl-2" src="Images/Frame (2).png" alt=""><span>30</span>
+
+                </div>
+                <div class="rating ">
+
+                  <img class="pl-2" src="Images/Frame (3).png" alt=""><span class="text-base ">180</span>
+
+                </div>
+              </div>
+              <h5 class="font-extrabold text-xl text-[#131318] pt-3">World Cup Flags Football</h5>
+              <h6 class="text-base font-medium pt-3 w-[306px]">Plan your product launch properly with the help of our
+                email marketing templates. </h6>
+              <div class="flex items-center justify-start pt-3">
+                <span class="text-base font-extrabold text-[#FF4240]">Price - $120.00</span>
+
+                <span class="text-base text-[#13131880] font-medium pl-3"><i class="My-shopping"></i></i> Delivery Fee :
+                  Free</span>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="flex items-center gap-7 justify-center">
+            <div>
+              <img class="" src="Images/7.png" alt="">
+            </div>
+            <div>
+              <div class="flex items-center justify-start">
+                <div class="rating">
+                  <img src="Images/Frame (4).png" alt=""><span>4.0</span>
+                </div>
+                <div class="rating  items-center justify-center">
+                  <img class="pl-2" src="Images/Frame (2).png" alt=""><span>30</span>
+
+                </div>
+                <div class="rating ">
+
+                  <img class="pl-2" src="Images/Frame (3).png" alt=""><span class="text-base ">180</span>
+
+                </div>
+              </div>
+              <h5 class="font-extrabold text-xl text-[#131318] pt-3">World Cup Flags Football</h5>
+              <h6 class="text-base font-medium pt-3 w-[306px]">Plan your product launch properly with the help of our
+                email marketing templates. </h6>
+              <div class="flex items-center justify-start pt-3">
+                <span class="text-base font-extrabold text-[#FF4240]">Price - $120.00</span>
+
+                <span class="text-base text-[#13131880] font-medium pl-3"><i class="My-shopping"></i></i> Delivery Fee :
+                  Free</span>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="flex items-center gap-7 justify-center">
+            <div>
+              <img class="" src="Images/8.png" alt="">
+            </div>
+            <div>
+              <div class="flex items-center justify-start">
+                <div class="rating">
+                  <img src="Images/Frame (4).png" alt=""><span>4.0</span>
+                </div>
+                <div class="rating  items-center justify-center">
+                  <img class="pl-2" src="Images/Frame (2).png" alt=""><span>30</span>
+
+                </div>
+                <div class="rating ">
+
+                  <img class="pl-2" src="Images/Frame (3).png" alt=""><span class="text-base ">180</span>
+
+                </div>
+              </div>
+              <h5 class="font-extrabold text-xl text-[#131318] pt-3">World Cup Flags Football</h5>
+              <h6 class="text-base font-medium pt-2 w-[306px]">Plan your product launch properly with the help of our
+                email marketing templates. </h6>
+              <div class="flex items-center justify-start pt-3">
+                <span class="text-base font-extrabold text-[#FF4240]">Price - $120.00</span>
+
+                <span class="text-base text-[#13131880] font-medium pl-3"><i class="My-shopping"></i></i> Delivery Fee :
+                  Free</span>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="flex items-center gap-7 justify-center">
+            <div>
+              <img class="" src="Images/9.png" alt="">
+            </div>
+            <div>
+              <div class="flex items-center justify-start">
+                <div class="rating">
+                  <img src="Images/Frame (4).png" alt=""><span>4.0</span>
+                </div>
+                <div class="rating  items-center justify-center">
+                  <img class="pl-2" src="Images/Frame (2).png" alt=""><span>30</span>
+
+                </div>
+                <div class="rating ">
+
+                  <img class="pl-3" src="Images/Frame (3).png" alt=""><span class="text-base ">180</span>
+
+                </div>
+              </div>
+              <h5 class="font-extrabold text-xl text-[#131318] pt-3">World Cup Flags Football</h5>
+              <h6 class="text-base font-medium pt-3 w-[306px]">Plan your product launch properly with the help of our
+                email marketing templates. </h6>
+              <div class="flex items-center justify-start pt-3">
+                <span class="text-base font-extrabold text-[#FF4240]">Price - $120.00</span>
+
+                <span class="text-base text-[#13131880] font-medium pl-3"><i class="My-shopping"></i></i> Delivery Fee :
+                  Free</span>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="flex items-center gap-7 justify-center">
+            <div>
+              <img class="" src="Images/10.png" alt="">
+            </div>
+            <div>
+              <div class="flex items-center justify-start">
+                <div class="rating">
+                  <img src="Images/Frame (4).png" alt=""><span>4.0</span>
+                </div>
+                <div class="rating  items-center justify-center">
+                  <img class="pl-2" src="Images/Frame (2).png" alt=""><span>30</span>
+
+                </div>
+                <div class="rating ">
+
+                  <img class="pl-2" src="Images/Frame (3).png" alt=""><span class="text-base ">180</span>
+
+                </div>
+              </div>
+              <h5 class="font-extrabold text-xl text-[#131318] pt-2">World Cup Flags Football</h5>
+              <p class="text-base font-medium pt-2 w-[306px]">Plan your product launch properly with the help of our
+                email marketing templates. </p>
+              <div class="flex items-center justify-start pt-2">
+                <span class="text-base font-extrabold text-[#FF4240]">Price - $120.00</span>
+
+                <span class="text-base text-[#13131880] font-medium pl-2"><i class="My-shopping"></i></i> Delivery Fee :
+                  Free</span>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <div class="product-s">
+      <div class="container m-auto">
+        <div class="section-part py-8">
+          <h1 class="text-center text-[ #131318] font-extrabold text-5xl">Clients Question</h1>
+          <h5 class="w-[606px] text-[#13131899] mx-auto text-center text-base py-6">After spending months on developing
+            a product or service, the obvious thing is to launch it out into the world; and email marketing is a good
+            channel to spread the word about your new product. </h5>
+        </div>
+
+        <div class="hello-screen ">
+          <div class="hero-content flex-col lg:flex-row gap-10">
+            <img src="Images/11.png" class="max-w-sm mb-3 rounded-lg w-[541px] h-[403px] mx-auto items-center " />
+            <div>
+              <div class="Our-Equipment pl-4">
+                <h3 class="text-xl text-[#131318] pb-4 font-bold">Our Equipment</h3>
+                <p class="text-base text-[#13131899] pb-4 w-[500px]">A product launch announcement is a series of
+                  activities that aim to promote and publicize a new product or service.</p>
+
+
+              </div>
+              <div class="collapse">
+                <input type="radio" name="my-collapse-3" checked="checked" />
+                <div class="collapse-title  text-[#131318] text-2xl font-medium">
+                  Hockey Training
+
+                </div>
+
+                <div class="collapse">
+                  <p class="text-base text-[#13131899] pb-6 w-[500px]">Businesses often use email to generate
+                    anticipation and enthusiasm before the launch of their product.</p>
+
+                </div>
+              </div>
+              <div class="collapse-1 ">
+                <input type="radio" name="my-collapse-3" />
+                <div class="collapse-title  text-[#131318] text-xl font-medium">
+                  Private Lessons
+                </div>
+                <div class="collapse">
+                  <p class="text-base text-[#13131899] pb-6 w-[500px]">Businesses often use email to generate
+                    anticipation and enthusiasm before the launch of their product.</p>
+                </div>
+              </div>
+              <div class="collapse ">
+                <input type="radio" name="my-collapse-3" />
+                <div class="collapse-title text-[#131318]  text-xl font-medium">
+                  Ski Touring
+                </div>
+                <div class="collapse">
+                  <p class="text-base text-[#13131899] pb-6 w-[500px]">Businesses often use email to generate
+                    anticipation and enthusiasm before the launch of their product.</p>
+                </div>
+              </div>
+              <div class="collapse-1 ">
+                <input type="radio" name="my-collapse-3" />
+                <div class="collapse-title text-[#131318] text-xl font-medium">
+                  Booking
+                </div>
+                <div class="collapse">
+                  <p class="text-base text-[#13131899] pb-6 w-[500px]">Businesses often use email to generate
+                    anticipation and enthusiasm before the launch of their product.</p>
+                </div>
+              </div>
+              <div class="collapse-1 ">
+                <input type="radio" name="my-collapse-3" />
+                <div class="collapse-title text-[#131318]  text-xl font-medium">
+                  Pricing
+                </div>
+                <div class="collapse">
+                  <p class="text-base text-[#13131899] pb-6 w-[500px]">Businesses often use email to generate
+                    anticipation and enthusiasm before the launch of their product.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <section class="touch-bar">
+      <div class="container  m-auto">
+
+
+        <div class="section-title-part py-8">
+          <h1 class="text-center text-[ #131318] font-extrabold text-5xl ">Get In Touch</h1>
+          <p class="w-[606px] text-[#13131899] mx-auto text-center text-base py-6">Businesses often use email to
+            generate anticipation and enthusiasm before the launch of their product. </p>
+        </div>
+
+        <div class="mx-auto grid lg:grid-cols-2">
+          <div class="text-center pl-50  lg:text-left mx-auto ">
+            <div class="w-90 h-50 bg-[#BCED6D1A] p-8  rounded-3xl">
+              <img class="w-14 h-14" src="Images/Group 1171275317.png" alt="">
+              <h4 class="text-base pt-6 font-normal text-[#13131866]">Phone Number :
+              </h4>
+              <h4 class="pt-4 text-[#131318] font-bold">(+62) 123-321-111</h4>
+
+
+            </div>
+            <div class="w-96 h-56 bg-[#BCED6D1A] mt-6 p-8 rounded-3xl mx-auto">
+              <img class="w-14 h-14" src="Images/Group 1171275318.png" alt="">
+              <h4 class="text-base pt-6 font-normal text-[#13131866]">Location :
+              </h4>
+              <h4 class="pt-4 text-[#131318] font-bold">
+                132/3 Mohakhali </h4>
+
+
+            </div>
+            <div class="w-96 h-56 bg-[#BCED6D1A] mt-6 p-8 rounded-3xl mx-auto">
+              <img src="Images/Group 1171275321.png" class="w-12 h-12" alt="">
+              <h3 class="text-base pt-6 font-normal text-[#13131866]">Email :
+              </h3>
+              <h3 class="pt-7 text-[#131318] font-bold">hockeys@support.com </h3>
+
+
+            </div>
+
+          </div>
+
+
+          <form class="card-body grid lg:grid-cols-2">
+            <div class="form">
+              <label class="label">
+                <span class="label-text font-bold text-xl text-[#131318] ">Your Name</span>
+              </label>
+              <input type="" placeholder="enter your name"
+                class="input bg-[#13131808] lg:w-full w-[305px]  h-18 text-base font-normal text-[#1313184D]" />
+            </div>
+            <div class="form">
+              <label class="label">
+                <span class="label-text font-bold text-xl text-[#131318]">Your Email</span>
+              </label>
+              <input type="email" placeholder="enter your email"
+                class="input bg-[#13131808] lg:w-full w-[305px]  h-18 text-base font-normal text-[#1313184D]" />
+            </div>
+            <div class="form">
+              <label class="label">
+                <span class="label-text font-bold text-xl text-[#131318]">Subject</span>
+              </label>
+              <input type="" placeholder="enter your topic"
+                class="input bg-[#13131808] lg:w-full w-[305px]  h-18 text-base font-normal text-[#1313184D]" />
+            </div>
+            <div class="form">
+              <label class="label">
+                <span class="label-text font-bold text-xl text-[#131318]">Phone Number</span>
+              </label>
+              <input type="" placeholder="Enter your number"
+                class="input bg-[#13131808] lg:w-full w-[305px]  h-18 text-base font-normal text-[#1313184D]" />
+            </div>
+            <div class="form mx-auto">
+              <label class="label">
+                <span class="label-text font-bold text-xl text-[#131318]">Message</span>
+              </label>
+              <textarea class="textarea bg-[#13131808] lg:w-[600px] w-[335px] h-80 mx-auto"
+                placeholder="Write your message"></textarea>
+            </div>
+            <br>
+
+            <div class="form mt-8">
+              <button
+                class="py-4  rounded-xl bg-[#FF4240] text-[#FFFFFF] lg:w-[500px]  w-[305px] hover:text-[#FF4240]">Send
+                Message</button>
+            </div>
+          </form>
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="container">
+        <div class="section-part py-8">
+          <h1 class="text-center text-[ #131318] font-extrabold text-5xl pb-9">Social Media</h1>
+          <ul class="flex items-center justify-center gap-9 my-6">
+            <li><a href="" class="p-2 text-3xl"><i class="fa-brands fa-twitter "></i></a></li>
+
+            <li><a href="" class="p-2 text-3xl"><i class="fa-brands fa-facebook"></i></a></li>
+
+            <li><a href="" class="p-2 text-3xl"><i class="fa-brands fa-instagram"></i></a></li>
+
+
+
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[#131318] py-14">
+    <div class="container m-auto">
+      <footer class="footer p-10  text-base-content">
+
+        <nav class="mx-auto">
+          <header
+            class="footer-title text-3xl block items-center justify-center text-[#FFF] font-bold pb-6  lg:text-left text-center">
+            Get In Touch</header>
+
+          <a
+            class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center"><i
+              class="fa-solid fa-envelope text-[#FF4240] "></i> hockeys@support.com</a>
+          <a
+            class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center"><i
+              class="fa-solid fa-phone text-[#FF4240]"> </i> (+62) 123-321-111</a>
+
+
+        </nav>
+
+        <div class="flex  justify-between mx-auto gap-50">
+          <nav class="mx-auto">
+            <header class="footer-title text-xl text-[#FFF] font-bold pb-6 lg:text-left text-center">Company</header>
+            <a
+              class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">About
+              us</a>
+
+            <a
+              class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Careers</a>
+            <a
+              class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">areers
+              News & Article</a>
+            <a
+              class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Legal
+              Notice</a>
+          </nav>
+          <nav class="mx-auto">
+            <header class="footer-title text-xl text-[#FFF] font-bold pb-6 lg:text-left text-center">Support</header>
+            <a
+              class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Help
+              Center</a>
+
+            <a
+              class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Ticket
+              Support</a>
+            <a
+              class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Contact
+              Us</a>
+          </nav>
+        </div>
+
+
+        <nav class="block items-center justify-center m-auto">
+          <header
+            class="footer-title text-xl block items-center justify-center text-[#FFF] font-bold pb-6  lg:text-left text-center">
+            Services</header>
+
+          <a
+            class="link link-hover block justify-center items-center text-base text-[#FFFFFF99]  font-medium pb-2 lg:text-left text-center">Academy</a>
+
+          <a
+            class="link link-hover block justify-center items-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Private
+            Lesson</a>
+          <a
+            class="link link-hover block justify-center items-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Hockeys
+            for kids</a>
+
+
+
+        </nav>
+      </footer>
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
